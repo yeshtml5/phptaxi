@@ -15,6 +15,9 @@ define("__BASE__",__ROOT__.__PATH__);/*PHP include BASE*/
 function path(){
 	echo __PATH__;
 }
+function base(){
+	return __ROOT__.__PATH__;
+}
 function import(){
 	include_once __PATH__."import.inc" ;
 }
@@ -54,7 +57,7 @@ function isMobile() {
 /*********************************************************************/
 //DB접속
 function db_connect(){
-	$db = mysqli_connect("localhost", "phptaxi", "password", "phptaxi");
+	$db = mysqli_connect("localhost", "phptaxi", "thsdhksgnl!1", "phptaxi");
 	if($db){
 		console('ok');
 	}else{
