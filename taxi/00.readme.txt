@@ -1,0 +1,15 @@
+
+/*워드프레스 Error상황*/
+"페이지를 접근할수없습니다." 사용자에 들어가서 admin "관리자" 로 되어있는지 확인!
+define(‘WP_DEBUG’, false); 위에
+define(‘WPLANG’, ‘ko_KR’);
+$_SERVER[‘SERVER_SOFTWARE’] = ‘Apache’;  추가
+
+
+/**/
+/wordpress/wp-config.php 에서
+
+/* 2FA 오류시 
+define('TWO_FACTOR_DISABLE', true);
+*/
+강제통과
