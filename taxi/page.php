@@ -8,4 +8,3 @@
 	</div><!--//content-->
 </article><!--//page-->
 <?php get_footer();?>
-

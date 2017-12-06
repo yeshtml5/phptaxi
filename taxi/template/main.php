@@ -19,7 +19,7 @@
 				/*peralink*/
 				$link = get_permalink( get_the_ID() );
 				/*특성이미지*/
-				$feature_img = (!isset($feature_img))? $meta["feature_img"][0] : "/src/images/sample/sample_img1.jpg";
+				$feature_img = (isset($meta["feature_img"][0]))? $meta["feature_img"][0] : "/src/images/sample/sample_img1.jpg";
 				/*태그*/
 				$tags='';
 				$tagList = get_the_tags();
@@ -42,10 +42,10 @@
 			<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 		<?php endif; ?>
 		<dl>
-			<dd class="mail">
-				<?php include(__ROOT__."/inc/mail.inc"); ?>
-				
-			</dd>
+			<dd class="mail"><?php include(__ROOT__."/inc/mail.inc"); ?></dd>
+		</dl>
+		<dl>
+			<dd class="inc"><?php include_once(base()."inc/particle.php"); ?></dd>
 		</dl>
 		<dl>
 			<dd><img src="/src/images/sample/sample_img1.jpg" ></dd>

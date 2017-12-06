@@ -9,12 +9,13 @@ header a.logo{float:left;padding-left:50px; }
 header a.logo > * {display:inline-block;vertical-align:middle;}
 header a.logo img{ margin-right:20px;}
 header a.logo span{ font-size:24px; font-weight:100;}
+header a.logo span em{ color:#fcd000;font-weight:100;}
 /*nav*/
 header nav{float:right;padding-right:50px;}
 header nav > * {display:inline-block;}
 header nav ul.menu > li{display:inline-block;}
 header nav ul.menu > li a{display:block;padding:10px;}
-header nav ul.menu > li a:hover{color:#ff0000;}
+header nav ul.menu > li a:hover{color:#fcd000;}
 /*aside*/
 header aside{position:relative;margin-left:20px;}
 header aside:before{position:absolute;top:10px;left:-10px;width:1px;height:20px;background:#999;content:'';}

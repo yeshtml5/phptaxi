@@ -3,11 +3,12 @@
 
 /*======== Box list ========*/
 section.list {margin:0 auto; padding:30px 10px;}
-section.list dl {width:300px; min-height:200px; margin:10px 15px; border-radius:2px; box-sizing:border-box; background-color:rgb(250,250,250); box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12);}
+section.list dl {width:300px; min-height:200px; margin:10px 15px; border-radius:2px; box-sizing:border-box; background-color:rgb(250,250,250); box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.2), 0 1px 5px 0 rgba(0,0,0,0.12); overflow:hidden;}
 section.list dl:nth-child(4n) dd { max-height:200px;}
 section.list dl:nth-child(4n+1) dd { max-height:300px;}
 section.list dl:nth-child(4n+2) dd { max-height:100px;}
 section.list dl dd.mail {max-height:500px;}
+section.list dl dd.inc {max-height:200px;}
 section.list dl dt { padding:15px; }
 section.list dl dd { max-width:300px; max-height:400px; padding:7px; overflow:hidden;}
 section.list dl dd img{ width:100%; height:auto; vertical-align:top;}

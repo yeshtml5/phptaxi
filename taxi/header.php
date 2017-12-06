@@ -24,7 +24,7 @@
 </head>
 <body>
 	<header class="clfix">		
-		<a class="logo" href="/"><img src="<?php path();?>src/images/svg/taxi.svg" width="40" height="40"/><span>PHP.TAXI</span></a>
+		<a class="logo" href="/"><img src="<?php path();?>src/images/svg/taxi.svg" width="40" height="40"/><span>PHP.<em>TAXI</em></span></a>
 		<nav>
 			<?php /*WP Menu*/ wp_nav_menu();?>
 			<aside>
