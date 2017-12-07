@@ -24,7 +24,7 @@ header aside a {display:inline-block;padding:10px;}
 footer{clear:both;padding:20px 0 0;background:#263238;}
 footer nav a{display:inline-block;padding:10px;color:#fff;}
 footer nav i img{max-width:30px;height:auto;vertical-align:top;}
-footer .copyright{padding:10px 0;background:#37424b;}
+footer .copyright{display:block;padding:10px 0;color:#ddd;font-size:12px;font-weight:100;background:#37424b;text-align:center;}
 /*======== Contact ========*/
 .contact-wrap{ position:absolute;left:0;top:-250px;width:100%;height:200px;background:#363839;z-index:100;}
 .contact-wrap.on{top:-50px;}
@@ -50,7 +50,9 @@ nav.page .wp-pagenavi span.pages{padding:5px 10px;margin-right:10px; color:#111;
 nav.page .wp-pagenavi span.pages ~ *{display:inline-block;border:1px solid #ccc;border-radius: 3px;padding:2px 7px;margin:0 5px;font-size:14px;font-weight:normal;color:#111;}
 nav.page .wp-pagenavi span.current{}
 /*======== page ========*/
-
+article.page{}
+article.page .content main{overflow:hidden;display:block;width:100%;}
+article.page .content main img{width:100%;height:auto;vertical-align:top;}
 /*======== archive ========*/
 article.archive{/* background:#fafafa; */}
 article.archive section {width:100%;margin:0 auto;padding:40px 50px;border-bottom:1px dashed #ccc;box-sizing:border-box;}
