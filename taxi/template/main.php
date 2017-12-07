@@ -53,54 +53,11 @@
 		</dl>
 		<dl>
 			<dt><p class="tit center">카카오 오픈채팅</p>
-			<p class="url center"><a href="https://open.kakao.com/o/sAeKQrs" target="_blank"><img src="https://i1.daumcdn.net/image.hope/etc//cskakaocom/pc/thumb/thumb_kakaotalk.png" ></a></p></dt>
+			<p class="url center"><a href="https://open.kakao.com/o/sAeKQrs" target="_blank">
+			<img src="https://i1.daumcdn.net/image.hope/etc//cskakaocom/pc/thumb/thumb_kakaotalk.png" ></a></p></dt>
 			<dd class="tag"><span>Html/Css/JavaScript/WordPress/</span></dd>
 		</dl>
-		<dl>
-			<dd><img src="/src/images/sample/sample_img2.jpg" ></dd>
-			<dt><p class="tit">타이틀</p><p class="date">2017.06.03</p><p class="url"><a href="#">http://php.taxi</a></p></dt>
-			<dd class="tag"><span>#html5,#mobile</span></dd>
-		</dl>
-		<dl>
-			<dd><img src="/src/images/sample/sample_img3.jpg" ></dd>
-			<dt><p class="tit">타이틀</p><p class="date">2017.06.03</p><p class="url"><a href="#">http://php.taxi</a></p></dt>
-			<dd class="tag"><span>#html5,#mobile</span></dd>
-		</dl>
-		<dl>
-			<dd><img src="/src/images/sample/sample_img4.jpg" ></dd>
-			<dt><p class="tit">타이틀</p><p class="date">2017.06.03</p><p class="url"><a href="#">http://php.taxi</a></p></dt>
-			<dd class="tag"><span>#html5,#mobile</span></dd>
-		</dl>
-		<dl>
-			<dd><img src="/src/images/sample/sample_img5.jpg" ></dd>
-			<dt><p class="tit">타이틀</p><p class="date">2017.06.03</p><p class="url"><a href="#">http://php.taxi</a></p></dt>
-			<dd class="tag"><span>#html5,#mobile</span></dd>
-		</dl>
-		<dl>
-			<dd><img src="/src/images/sample/sample_img1.jpg" ></dd>
-			<dt><p class="tit">타이틀</p><p class="date">2017.06.03</p><p class="url"><a href="#">http://php.taxi</a></p></dt>
-			<dd class="tag"><span>#html5,#mobile</span></dd>
-		</dl>
-		<dl>
-			<dd><img src="/src/images/sample/sample_img2.jpg" ></dd>
-			<dt><p class="tit">타이틀</p><p class="date">2017.06.03</p><p class="url"><a href="#">http://php.taxi</a></p></dt>
-			<dd class="tag"><span>#html5,#mobile</span></dd>
-		</dl>
-		<dl>
-			<dd><img src="/src/images/sample/sample_img3.jpg" ></dd>
-			<dt><p class="tit">타이틀</p><p class="date">2017.06.03</p><p class="url"><a href="#">http://php.taxi</a></p></dt>
-			<dd class="tag"><span>#html5,#mobile</span></dd>
-		</dl>
-		<dl>
-			<dd><img src="/src/images/sample/sample_img4.jpg" ></dd>
-			<dt><p class="tit">타이틀</p><p class="date">2017.06.03</p><p class="url"><a href="#">http://php.taxi</a></p></dt>
-			<dd class="tag"><span>#html5,#mobile</span></dd>
-		</dl>
-		<dl>
-			<dd><img src="/src/images/sample/sample_img5.jpg" ></dd>
-			<dt><p class="tit">타이틀</p><p class="date">2017.06.03</p><p class="url"><a href="#">http://php.taxi</a></p></dt>
-			<dd class="tag"><span>#html5,#mobile</span></dd>
-		</dl>
+		
 	</section>
 </article>
 

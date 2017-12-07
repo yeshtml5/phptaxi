@@ -166,13 +166,8 @@ select.select option{display:inline-block;padding:15px 20px;margin:20px 0;font-s
  
 /*=== Paragraph ============================================*/
 p{text-align:left;font-size:14px;color:#666666;line-height:26px;}
-p.tit{font-size:20px;}
-p.txt{font-size:16px;}
-p.info{font-size:14px;}
-p.bold , span.bold{font-weight:700;}
 p.box{padding:30px;color:#00204f;background:#dfebf6;}
 p.blockquote{padding:30px;color:#000000;border-left:5px solid #db504a;background:#f6f6f6;}
-p.blue{color:#5c97d1;}
 p.ui-center{display:block;clear:both;width:100%;text-align:center;}
 p.ui-center > * {display:inline-block;}
 em{font-weight:bold;}
