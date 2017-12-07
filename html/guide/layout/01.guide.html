@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <script type="text/javascript" src="/src/js/lib/jquery.js"></script><!-- jQuery -->
+    <script type="text/javascript" src="/src/js/common/core.js"></script>
+    <link type="text/css" rel="stylesheet" href="/src/css/common.css">
+    <link type="text/css" rel="stylesheet" href="/src/css/layout.css">
+    <!--[if lt IE 9]><script type="text/javascript" src="/src/js/lib/html5/html5.js"></script><![endif]-->
+    <style type="text/css" rel="stylesheet">
+        /* COMMON STYLE  Start **************************************/
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0;}
+        fieldset,img {border:0 none}
+        dl,ul,ol,menu,li {list-style:none}
+        blockquote, q {quotes: none}
+        blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
+        input,select,textarea,button {vertical-align:middle;}
+        input::-ms-clear {display:none;}
+        button {border:0 none;background-color:transparent;cursor:pointer;}
+        /* COMMON STYLE End **************************************/
+
+        /*layout*/
+        .content-wrap{width: 100%;}
+      
+        /* STYLE Start **************************************/
+        .header{}
+        .header .content{background:#c7cbd1;}
+        .header .logo{float:left;}
+        .header .util{float:right;}
+        .header .util a{position:relative;display:inline-block; font-size:12px;padding:5px 10px;}
+        .header .util a:after{position:absolute;content:'';background:#111; width:1px;height:10px;top:9px;right:0;}
+        /*nav*/
+        .header .nav{float:left; text-align:center; background:#007d9a;}
+        .header .nav li{display:inline-block; margin-right:20px;}
+        .header .nav li.last{margin:0;}
+        .header .nav li a{display:block; padding:10px;}
+        .header .nav li a:hover{text-decoration:underline; color:#FFF;}
+
+        .main-cont{}
+        .main-cont .content{background:#51a7cf; }
+        .main-cont .info-cont{height:200px; background: #de5e0e;}
+        .main-cont .t1{height:500px; background: #efcc5d;}
+        .main-cont .t1 p{line-height: 50px; vertical-align: top;}
+        .main-cont .t2{height:500px; background: #c09031;}
+
+        .footer{}
+        .footer .content{position:relative; padding:20px 0;background: #dfdfdf; font-size:12px;}
+        .footer .copyright{float: left; margin-bottom:10px;}
+        .footer .nav{float:left; margin-left:20px;}
+        .footer .nav li{display:inline-block; margin-right:10px;}
+        .footer select{position: absolute; top:15px; right:20px;font-size:12px; background:#dfdfdf;}
+        .footer .address{clear:both;font-size:12px;color:#333;}
+        /* STYLE End **************************************/
+
+        @media only screen and (max-width: 980px) {
+            .col-1{width:100%; max-width:980px;}
+        }
+    </style>
+</head>
+<body>
+<!--header-->
+<div class="header content-wrap">
+    <div class="content clfix">
+        <a class="logo clfix" href="#">TOP LOGO</a>
+        <ul class="util ls0 clfix">
+            <a href="#">HOME</a>
+            <a href="#">LOGIN</a>
+            <a href="#">JOIN</a>
+            <a href="#" class="last">CONTACT US</a>
+        </ul>
+        <ul class="nav col-1 clfix">
+            <li><a href="#">nav-1-1</a></li>
+            <li><a href="#">nav-2-1</a></li>
+            <li><a href="#">nav-3-1</a></li>
+            <li><a href="#">nav-4-1</a></li>
+            <li class="last"><a href="#">nav-5-1</a></li>
+        </ul>
+    </div>
+</div>
+<!--//header-->
+<!--main-content-->
+<div class="main-cont content-wrap">
+    <div class="content">
+        <h1>Heading Title</h1>
+        <div class="info-cont col-1 col">
+            <p>1단 컨텐츠 내용</p>
+        </div>
+        <div class="tab-cont col-2 col">
+            <div class="t1">
+                <p>컨텐츠내용1<br>컨텐츠내용1<br>컨텐츠내용1<br>컨텐츠내용1<br>컨텐츠내용1<br></p>
+            </div>
+            <div class="t2">
+                <p>컨텐츠내용2<br>컨텐츠내용2<br>컨텐츠내용2<br>컨텐츠내용2<br>컨텐츠내용2<br></p>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//main-content-->
+<!--footer-->
+<div class="footer content-wrap">
+    <div class="content">
+        <p class="copyright">© Yeshtml5, Inc. All rights reserved.</p>
+        <ul class="nav">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">프로젝트의뢰</a></li>
+        </ul>
+        <select>
+            <option>포트폴리오</option>
+            <option>회사소개</option>
+        </select>
+        <p class="address">
+            (우) 13493 경기도 안양시 동안구 비산동 임곡로80번길 대표이사 : 손완휘 사업자등록번호 : 214-81-83536 통신판매신고번호 : 2012-경기성남-1189<br>
+            대표전화 : 031-722-8000 Fax : 031-722-8901 구매문의 : 1588-3096 개인고객 기술지원 : 1577-9880 기업고객 기술지원 : 1577-9431
+        </p>
+    </div>
+</div>
+<!--//footer-->
+</body>
+</html>

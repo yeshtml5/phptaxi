@@ -1,0 +1,120 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>WEB STYLE GUIDE</title>
+    <script type="text/javascript" src="/src/js/lib/jquery/jquery.js"></script><!-- jQuery -->
+    <script type="text/javascript" src="/src/js/framework/core/core.js"></script>
+    <script type="text/javascript" src="/src/js/common/common.ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="/src/css/common/basic.css">
+    <link type="text/css" rel="stylesheet" href="/src/css/common/common.css">
+    <link type="text/css" rel="stylesheet" href="/src/css/common/layout.css">
+    <!--[if lt IE 9]><script type="text/javascript" src="/src/js/lib/html5/html5.js"></script><![endif]-->
+    <style type="text/css" rel="stylesheet">
+        /* COMMON STYLE  Start **************************************/
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0;}
+        fieldset,img {border:0 none}
+        dl,ul,ol,menu,li {list-style:none}
+        blockquote, q {quotes: none}
+        blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
+        input,select,textarea,button {vertical-align:middle;}
+        input::-ms-clear {display:none;}
+        button {border:0 none;background-color:transparent;cursor:pointer;}
+        /* COMMON STYLE End **************************************/
+        h1 {font-size:24px; letter-spacing: -1.2px; color: #08385d; line-height: 20px; border-bottom:1px solid #D4D4D4; padding-bottom:1px; background:none; }
+        h1 span {position: relative; display:inline-block; padding:0 10px 10px; }
+        h1 span:after { position:absolute; width:100%; left:0; bottom:-2px; border-bottom: 1px solid #08385d; content:''; }
+        .col-1{box-sizing: border-box; width:100%;}
+        .col-5{box-sizing: border-box;}
+        li{text-align: center;}
+        code {
+            display:inline-block;
+            margin-top:5px;
+            padding: 2px 4px;
+            font-size: 90%;
+            color: #c7254e;
+            background-color: #f9f2f4;
+            border-radius: 4px;
+        }
+        ul{margin-bottom:50px;}
+
+        /* Button STYLE  Start **************************************/
+        a.control, button.control, input[type='button'] {
+            position: relative; display: inline-block;font-size:13px;padding: 10px 25px;color: #FFF;background-color: #0B84FE;
+            transition: all 0.2s ease-out; text-decoration:none;cursor: pointer;border: solid 1px rgba(0,0,0,0);text-align: center;z-index: 1;
+        }
+        a.control:hover, button.control:hover,input[type='button']:hover{
+            background-color:#666; border-color: #333;
+        }
+        /*color*/
+        .control.teal{background-color: #16a085;}
+        .control.blue{background-color: #2980b9;}
+        .control.gray{background-color: #7f8c8d;}
+        .control.orange{background-color: #d35400;}
+        .control.magenta{background-color: #8e44ad;}
+        /*size*/
+        .control.xsmall{padding:4px 19px;font-size:8px;}
+        .control.small{padding:6px 22px;font-size:10px;}
+        .control{padding:10px 25px;font-size:13px;}
+        .control.large{padding:12px 30px;font-size:14px;}
+        .control.xlarge{padding:15px 40px;font-size:16px;}
+        /*rounded*/
+        .rounded{border-radius: 5px !important;}
+        /* Button STYLE  End **************************************/
+    </style>
+</head>
+<body>
+
+<!--main-content-->
+<div class="tmpl panel-wrap">
+    <div class="content">
+        <h1 class="mgb_30"><span>Button & Anchor Common</span></h1>
+        <ul class="col-1">
+            <li><a href="#" class="cmn">cmn</a><br><code>.cmn</code></li>
+        </ul>
+        <ul class="col-5">
+            <li><a href="#" class="trans cmn darkBlue">darkBlue</a><br><code>.trans.cmn.darkBlue</code></li>
+            <li><a href="#" class="trans cmn darkOrange">darkOrange</a><br><code>.cmn.darkOrange</code></li>
+            <li><a href="#" class="trans cmn darkBlue">darkBlue</a><br><code>.cmn.darkBlue</code></li>
+            <li><a href="#" class="trans cmn darkBlue">darkBlue</a><br><code>.cmn.darkBlue</code></li>
+            <li><a href="#" class="trans cmn darkBlue">darkBlue</a><br><code>.cmn.darkBlue</code></li>
+        </ul>
+        <h1 class="mgb_30"><span>Button & Anchor control</span></h1>
+        <ul class="col-1">
+            <li><a href="#" class="control">Control</a><br><code>.control</code></li>
+        </ul>
+        <ul class="col-5">
+            <li><a href="#" class="control teal">Teal</a><br><code>.control.teal</code></li>
+            <li><a href="#" class="control blue">Blue</a><br><code>.control.blue</code></li>
+            <li><a href="#" class="control orange">Orange</a><br><code>.control.orange</code></li>
+            <li><a href="#" class="control gray">Gray</a><br><code>.control.gray</code></li>
+            <li><a href="#" class="control magenta">Magenta</a><br><code>.control.magenta</code></li>
+        </ul>
+        <h1 class="mgb_30"><span>Button & Anchor size</span></h1>
+        <ul class="col-1">
+            <li><a href="#" class="control primary">Primary</a><br><code>.control</code></li>
+        </ul>
+        <ul class="col-5">
+            <li><a href="#" class="control xsmall">xsmall</a><br><code>.control.xsmall</code></li>
+            <li><a href="#" class="control small">small</a><br><code>.control.small</code></li>
+            <li><a href="#" class="control">control</a><br><code>.control</code></li>
+            <li><a href="#" class="control large">large</a><br><code>.control.large</code></li>
+            <li><a href="#" class="control xlarge">xlarge</a><br><code>.control.xlarge</code></li>
+        </ul>
+        <h1 class="mgb_30"><span>Button & Anchor rounded</span></h1>
+        <ul class="col-1">
+            <li><a href="#" class="control rounded">Control</a><br><code>.control.rounded</code></li>
+        </ul>
+        <ul class="col-5">
+            <li><a href="#" class="control teal rounded">Teal</a><br><code>.control.teal.rounded</code></li>
+            <li><a href="#" class="control blue rounded">Blue</a><br><code>.control.blue.rounded</code></li>
+            <li><a href="#" class="control xlarge orange rounded">Orange</a><br><code>.control.orange.rounded.xlarge</code></li>
+            <li><a href="#" class="control gray rounded">Gray</a><br><code>.control.gray</code></li>
+            <li><a href="#" class="control xlarge magenta rounded">Magenta</a><br><code>.control.magenta.rounded.xlarge</code></li>
+        </ul>
+    </div>
+</div>
+<!--//main-content-->
+</body>
+</html>

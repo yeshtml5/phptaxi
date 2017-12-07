@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Common Style</title>
+    <link type="text/css" rel="stylesheet" href="/src/css/common/basic.css">
+    <link type="text/css" rel="stylesheet" href="/src/css/common/layout.css">
+    <style type="text/css" rel="stylesheet">
+        /* COMMON STYLE  Start **************************************/
+
+        h4 { margin: 0 0 30px !important; }
+        /* COMMON STYLE End **************************************/
+    </style>
+    <script type="text/javascript" src="/src/js/lib/jquery/jquery.js"></script><!-- jQuery -->
+    <script type="text/javascript" src="/src/js/framework/core/core.js"></script>
+    <script type="text/javascript" src="/src/js/common/common.ui.js"></script>
+</head>
+<body>
+<div id="contents" class="template">
+    <div class="cnt">
+        <h4>Slider Banner</h4>
+        <div class="ui-slider"><!-- Slider Banner start -->
+            <ul class="viewer">
+                <li class="on"><a href="#"><img src="/src/images/common/gallery/img18.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/img17.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/img20.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/img14.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/img8.jpg"></a></li>
+            </ul>
+            <ul class="pager"><!-- pager 동적생성 -->
+                <!--<li class="on"><a href="#"></a></li>-->
+                <!--<li><a href="#"></a></li>-->
+            </ul>
+        </div>
+        <style type="text/css">
+            .ui-slider > .viewer { display:block; width:100%; text-align: center;}
+            .ui-slider > .viewer li { display:none; }
+            .ui-slider > .viewer li.on { display:block; }
+            .ui-slider > .pager { display:block; width:100%; text-align: center;}
+            .ui-slider > .pager li { display:inline-block; }
+            .ui-slider > .pager li a { display:block; padding:1px 3px; color:#3C3C3C;}
+            .ui-slider > .pager li a:after { content:'○';}
+            .ui-slider > .pager li.on a:after { content:'●'; }
+        </style>
+        <script type='text/javascript'>
+            (function($){
+                $(document).ready(function(){
+                    var _slider = new ui.Slider({
+                        wrap : $('.ui-slider'),
+                        view : $('.viewer li'),
+                        pager : $('.pager'),
+                        prev : $('.ui-slider-prev'),
+                        next : $('.ui-slider-next'),
+                        callback : function(data){
+                            console.log(data);
+                        }
+                    });
+                });
+            })($);
+        </script><!-- Slider Banner end -->
+    </div>
+    <div class="cnt">
+        <h4>tab</h4>
+        <div class="ui-tab type2 dynamic"><!-- dynamic style -->
+            <dl class="on">
+                <dt><a href="#">tab 1</a></dt>
+            </dl>
+            <dl>
+                <dt><a href="#">tab 2</a></dt>
+            </dl>
+            <div class="ui-view">
+                다이나믹 높이 컨텐츠내용111<br>컨텐츠내용<br>컨텐츠내용<br>컨텐츠내용<br>
+            </div>
+            <div class="ui-view none">
+                다이나믹 높이 컨텐츠내용222<br>컨텐츠내용<br>컨텐츠내용<br>컨텐츠내용<br>컨텐츠내용222<br>컨텐츠내용<br>컨텐츠내용<br>컨텐츠내용<br>컨텐츠내용222<br>컨텐츠내용<br>컨텐츠내용<br>컨텐츠내용<br>
+            </div>
+        </div>
+        <div class="ui-tab type5"><!-- ui Tab start -->
+            <dl class="on">
+                <dt><a href="#">tab 1</a></dt>
+                <dd><a href="#">컨텐츠내용111</a><br>컨텐츠내용<br>컨텐츠내용<br>컨텐츠내용<br>컨텐츠내용111</a><br>컨텐츠내용<br>컨텐츠내용<br>컨텐츠내용<br></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">tab 2</a></dt>
+                <dd>컨텐츠내용222</dd>
+            </dl>
+            <dl>
+                <dt><a href="#">tab 3</a></dt>
+                <dd>컨텐츠내용333<br>컨텐츠내용<br>컨텐츠내용<br>컨텐츠내용<br></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">tab 4</a></dt>
+                <dd>컨텐츠내용444<br>컨텐츠내용<br>컨텐츠내용<br>컨텐츠내용<br></dd>
+            </dl>
+            <dl>
+                <dt><a href="#">tab 5</a></dt>
+                <dd>컨텐츠내용555<br>컨텐츠내용<br>컨텐츠내용<br>컨텐츠내용<br></dd>
+            </dl>
+        </div>
+        <style type="text/css">
+            .ui-tab { overflow: hidden; position: relative; width:100%;  margin-bottom: 10px; padding: 10px 1px;height:200px; border-bottom:1px solid #cecece;}
+            .ui-tab dl { float: left; color: #4C4C4C; font-size: 12px; }
+            .ui-tab dl dt a { line-height: 38px; height:38px; background: #F2F2F2; display: block; overflow: hidden; margin-right: -1px; text-align: center; color: #333333; border: 1px solid #d9d9d9; border-bottom: 1px solid #B5B5B5;  }
+            .ui-tab dl dt a:hover { background: #FFFFFF; }
+            .ui-tab dl dt a:visited, .ui-tab li a:link , .ui-tab li a:active { text-decoration: none; }
+            .ui-tab dl.on dt a { position: relative; z-index: 2; height: 39px; line-height: 39px; font-weight: bold; border:1px solid #B5B5B5; border-bottom: 0px; background: #FFFFFF; }
+            .ui-tab dl dd { display:none; width:100%; background:#E2E4E6;  left:0; }
+            .ui-tab dl.on dd { display:block; position:absolute;left:0; width:100%; padding:10px;}
+            .ui-tab.type2 dl { width:50%; }
+            .ui-tab.type5 dl { width:20%; }
+
+            .ui-tab.dynamic { height:auto !important;}
+            .ui-tab.dynamic div { clear:both;}
+        </style>
+        <script type='text/javascript'>
+            (function($){
+                $(document).ready(function(){
+                    $('.ui-tab').each(function(idx){// 다수 탭일때 고정높이
+                        var _this = $(this);
+                        var _key = "tab"+idx;
+                        var _tab = new ui.Tab({
+                            key : _key,
+                            wrap : _this,
+                            anchor :_this.find('dt a'),
+                            view : _this.find('dl'),
+                            callback : function(data){
+                                console.log(data);
+                                if(data.key==="tab0"){ // Dynamic Style callBack처리
+                                    var _select=data.select;
+                                    $('.ui-view').hide().eq(_select).show();
+                                }
+                            }
+                        });
+                    });
+                });
+            })($);
+        </script><!-- ui Tab end -->
+    </div>
+    <div class="cnt">
+        <h4>Item Slider</h4>
+        <div class="ui-item-slider">
+            <ul class="view">
+                <li class="on"><img src="/src/images/common/gallery/img10.jpg"></li>
+                <li><img src="/src/images/common/gallery/img11.jpg"></li>
+                <li><img src="/src/images/common/gallery/img12.jpg"></li>
+                <li><img src="/src/images/common/gallery/img13.jpg"></li>
+                <li><img src="/src/images/common/gallery/img14.jpg"></li>
+                <li><img src="/src/images/common/gallery/img15.jpg"></li>
+                <li><img src="/src/images/common/gallery/img16.jpg"></li>
+                <li><img src="/src/images/common/gallery/img17.jpg"></li>
+                <li><img src="/src/images/common/gallery/img18.jpg"></li>
+                <li><img src="/src/images/common/gallery/img19.jpg"></li>
+                <li><img src="/src/images/common/gallery/img20.jpg"></li>
+            </ul>
+            <ul class="item">
+                <li class="on"><a href="#"><img src="/src/images/common/gallery/icon_img10.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/icon_img11.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/icon_img12.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/icon_img13.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/icon_img14.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/icon_img15.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/icon_img16.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/icon_img17.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/icon_img18.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/icon_img19.jpg"></a></li>
+                <li><a href="#"><img src="/src/images/common/gallery/icon_img20.jpg"></a></li>
+            </ul>
+            <div class="prev"><a href="#">이전</a></div>
+            <div class="next"><a href="#">다음</a></div>
+            <div class="pager">-</div>
+        </div>
+        <style type="text/css">
+            .ui-item-slider { position:relative; border:1px solid #e8e0e0; text-align: center; }
+            .ui-item-slider .view { margin-top:30px; }
+            .ui-item-slider .view li { display:none; }
+            .ui-item-slider .view li.on { display:inline-block; }
+            .ui-item-slider .item { width:500px; margin:30px auto 0; overflow: hidden; }
+            .ui-item-slider .item li { display:inline-block; margin:0 15px 0 0; border: 2px solid transparent; }
+            .ui-item-slider .item li.on { border-color:#ff0000; }
+            .ui-item-slider .item li a { display:block; width:80px; height:80px; margin:0; padding:0;}
+            .ui-item-slider .prev { position:absolute; top:50%; left:0; margin-top:-40px; }
+            .ui-item-slider .next { position:absolute; top:50%; right:0;margin-top:-40px; }
+            .ui-item-slider .prev a , .ui-item-slider .next a { display: block; background: #3C3C3C; padding:20px; color:#FFFFFF;}
+            .ui-item-slider .pager { font-size:14px; }
+        </style>
+        <script type="text/javascript">
+            (function($){
+                $(document).ready(function(){
+                    var _tab = new ui.ItemSlider({
+                        wrap : $('.ui-item-slider'),
+                        view : $('.view li'),
+                        item : $('.item li a'),
+                        prev : $('.prev a'),
+                        next : $('.next a'),
+                        divide : 5,
+                        callback : function(data){
+                            console.log(data);
+                            $('.ui-item-slider .pager').text( Number(data.group+1)+" / "+data.group_total);
+                        }
+                    });
+                });
+            })($);
+        </script>
+    </div>
+    <div class="cnt">
+        <h4>Name</h4>
+        <style type="text/css">
+
+        </style>
+        <script type="text/javascript">
+            (function($){
+                $(document).ready(function(){
+
+                });
+            })($);
+        </script>
+    </div>
+    <!--
+    <div class="cnt">
+        <h4>Name</h4>
+        <style type="text/css">
+
+        </style>
+        <script type="text/javascript">
+        (function($){
+            $(document).ready(function(){
+
+            });
+        })($);
+        </script>
+    </div>
+    -->
+</div>
+</body>
+</html>

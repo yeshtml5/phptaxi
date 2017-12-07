@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="/src/css/common/common.css"/>
+    <script type="text/javascript" src="/src/js/lib/jquery/jquery.js"></script>
+    <script type="text/javascript" src="/src/js/framework/core/core.js"></script>
+
+    <style type="text/css">/* 스타일시트 */
+        body { position: relative; margin:0; padding:0; }
+        #contents {  width:800px; margin:0 auto; border:1px solid #ffaa3e; height: 800px; }
+
+        #slide { position: absolute; width:100%; height:300px; background: #005887; }
+        #slide .close { position: absolute; z-index: 10; display:block; right:100px; bottom: -50px; padding:20px; background: #ff0000;}
+
+        #item { width:800px; margin:0 auto; background: 300px; background: #0073af; }
+        #item li { margin:10px;background: #0095e3; }
+        #item li a { display:block; padding:10px;  color:#FFFFFF; }
+    </style>
+
+    <script type="text/javascript">/* 스크립트 */
+    (function ($) {
+        $(document).ready(function () {
+            var _slide = $('#slide');
+            var _b = $('body');
+            var _close = $('#slide .close');
+            var _isOpen = true;
+            _b.on('click', _close.selector,function(event){
+                event.preventDefault();
+                _isOpen = !_isOpen;
+                _slide.toggleClass('on');
+                var _top = (_isOpen)?'0':'-300px';
+                _slide.stop().animate({'top': _top}, 450, 'easeOutQuart');
+            });
+            _close.trigger('click');
+            $('#checkbox1').setCheck();
+        });
+    })($);
+    </script>
+</head>
+<body>
+<div id="slide" class="on">
+    <div id="item">
+        <ul>
+            <li id="moveFirst"><a href="#"><span>ITEM 1</span></a></li>
+            <li id="moveLi"><a href="#"><span>ITEM 2</span></a></li>
+            <li><a href="#"><span>ITEM 3</span></a></li>
+            <li id="moveLast"><a href="#"><span>ITEM 4</span></a></li>
+        </ul>
+    </div>
+    <a href="#" class="close"><span>CLOSE</span></a>
+</div>
+<div id="contents">
+
+    <div id="pager">
+
+    </div>
+    <div id="form">
+        <input id="input_name" type="input" >
+        <input id="checkbox1" type="checkbox" >
+    </div>
+</div>
+</body>
+</html>

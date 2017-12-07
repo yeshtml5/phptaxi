@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+/*=== nav ===============================================*/
+nav{position:relative;margin:30px 20px;}
+nav li ul{position:relative; display:none; background:url('./images/line.gif') repeat-y;}
+nav li ul li { padding:0 20px;}
+nav li a {display:inline-block;position:relative;}
+nav li a:hover{text-decoration: underline;}
+nav li a:before {display:inline-block; content:url('./images/page.gif' );}
+nav li.on > ul{display:block;}
+/*nav li.on > a:before{ content:url('./images/globe.gif' ); }*/
+nav li.node li{ background:url('./images/join.gif') no-repeat; }
+nav li.node > a:before {display:inline-block; content:url('./images/folder.gif');}
+nav li.node.on > a:before {display:inline-block; content:url('./images/folderopen.gif');}
+/*=== Footer ===============================================*/

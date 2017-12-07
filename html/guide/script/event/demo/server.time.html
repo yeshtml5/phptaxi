@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Get Server Time with Javascript</title>
+</head>
+<body>
+<script language="javascript">
+	var xmlHttp;
+	function srvTime(url){
+		if(url == undefined) { url = window.location.href.toString(); }
+		if(window.XMLHttpRequest){
+			xmlHttp = new XMLHttpRequest();
+		}else if(window.ActiveXObject){
+			xmlHttp = new ActiveXObject('Msxml2.XMLHTTP');
+		}else{
+			return null;
+		}
+		xmlHttp.open('HEAD',url,false);  //헤더 정보만 받기 위해 HEAD방식으로 요청.
+		xmlHttp.setRequestHeader("Content-Type", "text/html");
+		xmlHttp.send('');
+
+		return xmlHttp.getResponseHeader("Date");  //받은 헤더정보에서 Date 속성을 리턴.
+	}
+	function addZero(n){
+          return n < 10 ? "0" + n : n;
+    }
+	var serverTime = srvTime(), clientTime = new Date();
+
+	var _time = serverTime;
+    var _date = new Date(_time);
+	var _year = _date.getFullYear();
+	var _month = addZero(_date.getMonth()+1);
+	var _day = addZero(_date.getDate());
+	var _week = _date.getDay();
+	var _hour = _date.getHours();
+	var _min = _date.getMinutes();
+	var _sec = _date.getSeconds();
+	
+
+	document.write('_year : '+_year+ '<br>');
+	document.write('_month : '+_month+ '<br>');
+	document.write('_day : '+_day+ '<br>');
+	document.write('_week : '+_week+ '<br>');
+	document.write('_hour : '+_hour+ '<br>');
+	document.write('_min : '+_min+ '<br>');
+	document.write('_sec : '+_sec+ '<br>');
+	
+
+    var today = _date.getFullYear() + addZero(_date.getMonth()+1) + addZero(_date.getDate());
+	document.write('data : '+today);
+	console.log(today );
+	document.write('<br>');
+	document.write( 'crootTime is ' + serverTime + '<br /> clientTime is ' + clientTime );
+</script>
+</body>
+</html>

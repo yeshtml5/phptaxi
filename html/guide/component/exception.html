@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="/src/css/common/basic.css">
+    <style type="text/css" rel="stylesheet">
+        /* COMMON STYLE  Start **************************************/
+        body { background: url("/src/asset/background/overlay-pattern1.png") #404d40; color:#FFFFFF;}
+        #contents .cnt { position: relative; width:80%; margin:50px auto; background:#FFFFFF; padding:30px;}
+        #contents div.wrapper { margin: 0 0 60px;}
+        #contents div.wrapper:nth-child(6) { margin: 0;}
+
+        /* COMMON STYLE End **************************************/
+    </style>
+</head>
+<body>
+<div id="contents">
+    <div>
+        try catch 문구는 주로 IE에서 잘 확인이 가능하다.
+        <a href="http://gangzzang.tistory.com/entry/%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8JavaScript-%EC%98%88%EC%99%B8-%EC%B2%98%EB%A6%ACException-handling">
+            참고URL
+        </a>
+    </div>
+    <script type="text/javascript">
+        try {
+            var array = new Array(99999999999999999999999);
+        } catch (exception) {
+            var output = '';
+            for (var i in exception) {
+                output += i + ' : ' + exception[i] + '\n';
+            }
+            console.log(output);
+            alert(output);
+        }
+    </script>
+</div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+@charset "utf-8";
+/*common*/
+input[type='submit'] {border:0;padding:6px 15px; color:#FFF; background:#01c0c8;}
+input[type='submit']:hover {border:0;padding:6px 15px; color:#FFF; background:#ff0000;}
+
+
+/*left-menu*/
+.left-menu{position:absolute;top:0;left:0;z-index:100;width:200px;background:#38354a;color:#FFF;}
+.left-menu a{font-size:30px;color:#FFF;}
+/*main-wrap*/
+
+/*panel*/
+.panel li{box-sizing:border-box; }
+.panel li .box{display:block; height:80px; margin:0 20px;padding:10px 15px; background:#FFF;border-top:2px solid #00008B;}
+/*to do*/
+.todo-wrap{box-sizing:border-box;padding:20px;width:100%;  }
+/*board-list*/
+.todo{ width:100%;background:#FFF;border-top:2px solid #6a8ec6; border-bottom: 1px solid #b3b3b3;}
+.todo tr.on { background: #f5f5f5;}
+.todo tr { border-bottom:1px solid #dadde2; }
+.todo tr.last{border:0;}
+.todo th {position: relative; font-size: 12px; background: #fbfcfd;  }
+.todo th:after { position: absolute; right:0; top:10px; width:1px; height:15px; border-left: 1px solid #a3a3a3;  content:''; }
+.todo th.last:after { border:0; }
+.todo td , .todo th {text-align:center; padding:10px 0; letter-spacing:-0.8px; }
+.todo td.tit{text-align:left; text-indent: 50px;}
+.todo td.chk input:checked{background:#FF0000;}
+/*board-write*/
+.todo-write{display:border-box;width:100%;padding:20px;}
+.todo-write .box-head{background:#ff0000;}
+.todo-write .box-view{background:#FFF;}
+

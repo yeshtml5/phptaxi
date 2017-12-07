@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>WEB STYLE GUIDE</title>
+    <script type="text/javascript" src="/src/js/lib/jquery/jquery.js"></script><!-- jQuery -->
+    <script type="text/javascript" src="/src/js/framework/core/core.js"></script>
+    <script type="text/javascript" src="/src/js/common/common.ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="/src/css/common/basic.css">
+    <link type="text/css" rel="stylesheet" href="/src/css/common/common.css">
+    <link type="text/css" rel="stylesheet" href="/src/css/common/layout.css">
+    <!--[if lt IE 9]><script type="text/javascript" src="/src/js/lib/html5/html5.js"></script><![endif]-->
+    <style type="text/css" rel="stylesheet">
+        .panel-wrap{}
+        .panel-wrap h1 {font-size:24px; letter-spacing: -1.2px; color: #08385d; line-height: 20px; border-bottom:1px solid #D4D4D4; padding-left:0;padding-bottom:1px; background:none; }
+        .panel-wrap h1 span {position: relative; display:inline-block; padding:0 10px 10px; }
+        .panel-wrap h1 span:after { position:absolute; width:100%; left:0; bottom:-2px; border-bottom: 1px solid #08385d; content:''; }
+    </style>
+</head>
+<body>
+<!--main-content-->
+<div class="tmpl">
+    <h1 class="mgb_30"><span>Board-write</span></h1>
+    <div class="bbs-wrap bbsWrite">
+        <table>
+            <colgroup><col width="20%;"><col width="80%;"></colgroup>
+            <tbody>
+            <tr>
+                <th class="symbol required">제목</th>
+                <td><input type="text" class="w80 cmn" maxlength="50"></td>
+            </tr>
+            <tr>
+                <th>성별</th>
+                <td>
+                    <ul class="list">
+                        <li><label><input type="radio" name="sex_rdo" class="trans">남자</label></li>
+                        <li><label><input type="radio" name="sex_rdo" class="trans" >여자</label></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>전화번호</th>
+                <td>
+                    <ul class="phone list">
+                        <li>
+                            <select class="cmn w100px">
+                                <option selected="selected">010</option>
+                                <option>011</option>
+                                <option>016</option>
+                                <option>017</option>
+                                <option>018</option>
+                                <option>019</option>
+                            </select>
+                        </li>
+                        <li>-</li>
+                        <li><input type="text" class="cmn w100px"></li>
+                        <li>-</li>
+                        <li><input type="text" class="cmn w100px"></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th>문의 유형</th>
+                <td>
+                    <select class="w80 cmn">
+                        <option>문의구분선택</option>
+                        <option>선택값1</option>
+                        <option>선택값2</option>
+                        <option>선택값3</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>수신여부</th>
+                <td>
+                    <ul class="list">
+                        <li><label><input type="checkbox" class="trans">E-mail 수신여부</label></li>
+                        <li><label><input type="checkbox" class="trans">SMS 수신여부</label></li>
+                        <li><label><input type="checkbox" class="trans">뉴스레터 수신여부</label></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <th class="symbol required">내용</th>
+                <td><textarea class="w80 cmn"></textarea></td>
+            </tr>
+            <tr class="last">
+                <th>첨부파일</th>
+                <td><input type="file" class="w80 cmn">  </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="block w100 center mgt_30">
+        <a href="#" class="cmn bgBlue fcWhite bor0">저장</a>
+        <a href="#" class="cmn">취소</a>
+    </div>
+</div>
+<!--//main-content-->
+</body>
+</html>

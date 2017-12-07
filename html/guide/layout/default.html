@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>WEB STYLE GUIDE</title>
+    <script type="text/javascript" src="/src/js/lib/jquery.js"></script><!-- jQuery -->
+    <script type="text/javascript" src="/src/js/common/core.js"></script>
+    <script type="text/javascript" src="/src/js/common/common.ui.js"></script>
+    <link type="text/css" rel="stylesheet" href="/src/css/basic.css">
+    <link type="text/css" rel="stylesheet" href="/src/css/common.css">
+    <!-- <link type="text/css" rel="stylesheet" href="/src/css/layout.css"> -->
+    <!--[if lt IE 9]><script type="text/javascript" src="/src/js/lib/html5/html5.js"></script><![endif]-->
+    <style type="text/css" rel="stylesheet">
+        /* COMMON STYLE  Start **************************************/
+        body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0;}
+        fieldset,img {border:0 none}
+        dl,ul,ol,menu,li {list-style:none}
+        blockquote, q {quotes: none}
+        blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
+        input,select,textarea,button {vertical-align:middle;}
+        input::-ms-clear {display:none;}
+        button {border:0 none;background-color:transparent;cursor:pointer;}
+        /* COMMON STYLE End **************************************/
+        .content-wrap{width:100%;}
+        .content{ margin-left:auto; margin-right:auto;}
+        .in_wrap{padding:30px 0;}
+        /* STYLE Start **************************************/
+        header .content > div{position:relative; background:#c7cbd1;}
+        header .col-1 .logo{position:absolute; top:5px;left:5px; }
+        header .col-1 .util{float:right; }
+        header .util a{position:relative;display:inline-block; font-size:12px;padding:5px 10px;}
+        header .util a:after{position:absolute;content:'';background:#111; width:1px;height:10px;top:9px;right:0;}
+        /*nav*/
+        header nav{ text-align:center; background:#007d9a;}
+        header nav li{display:inline-block; margin-right:20px;}
+        header nav li.last{margin:0;}
+        header nav li a{display:block; padding:10px;}
+        header nav li a:hover{text-decoration:underline; color:#FFF;}
+
+        .main-cont{}
+        .main-cont .col-1{background:#51a7cf; }
+        .main-cont .col-1 h1{padding:10px;}
+        .main-cont .info-cont{height:200px; background: #e1e1e1;}
+        .main-cont dl{position:relative;background:#111;}
+        .main-cont dl dt{position:absolute;top:0;left:0;width:200px;background:#007d9a;}
+        .main-cont dl dd{width:100%;padding-left:200px;background:#999;box-sizing:border-box;}
+        .main-cont .t1{height:500px; background: #efcc5d;}
+        .main-cont .t1 p{line-height: 50px; vertical-align: top;}
+        .main-cont .t2{height:500px; background: #c09031;}
+
+        footer{position:relative; padding:20px 0;background: #dfdfdf; font-size:12px;}
+        footer .copyright{float: left; margin-bottom:10px;}
+        footer .nav{float:left; margin-left:20px;}
+        footer .nav li{display:inline-block; margin-right:10px;}
+        footer select{position: absolute; top:15px; right:20px;font-size:12px; background:#dfdfdf;}
+        footer .address{clear:both;font-size:12px;color:#333;}
+        /* STYLE End **************************************/
+
+        @media only screen and (max-width: 980px) {
+            .col-1{width:100%; max-width:980px;}
+            .col-2.col > *{ width:100%; }
+        }
+    </style>
+</head>
+<body>
+<header class="content-wrap"><!--header-->
+    <div class="content">
+        <div class="col-1 col auto">
+            <a class="logo" href="#">TOP LOGO</a>
+            <ul class="util">
+                <a href="#">HOME</a>
+                <a href="#">LOGIN</a>
+                <a href="#">JOIN</a>
+                <a href="#" class="last">CONTACT US</a>
+            </ul>
+        </div>
+        <nav class="col-1 col auto">
+            <ul>
+                <li><a href="#">nav-1-1</a></li>
+                <li><a href="#">nav-2-1</a></li>
+                <li><a href="#">nav-3-1</a></li>
+                <li><a href="#">nav-4-1</a></li>
+                <li class="last"><a href="#">nav-5-1</a></li>
+            </ul>
+        </nav>
+    </div>
+</header><!--//header-->
+<div class="main-cont content-wrap"><!--main-content-->
+    <div class="col-1 auto">
+        <h1>Heading Title</h1>
+    </div>
+    <div class="info-cont w100">
+        <dl class="col-1 auto">
+            <dt><div class="in_wrap">고정넓이영역</div></dt>
+            <dd><div class="in_wrap">가변넓이영역</div></dd>
+        </dl>
+        <p>1단 컨텐츠 내용</p>
+    </div>
+    <div class="col-1 auto">
+        <div class="col-2 col">
+            <div class="t1">
+                <p>컨텐츠내용1<br>컨텐츠내용1<br>컨텐츠내용1<br>컨텐츠내용1<br>컨텐츠내용1<br></p>
+            </div>
+            <div class="t2">
+                <p>컨텐츠내용2<br>컨텐츠내용2<br>컨텐츠내용2<br>컨텐츠내용2<br>컨텐츠내용2<br></p>
+            </div>
+        </div>
+    </div>
+</div><!--//main-content-->
+<footer class="content-wrap"><!--footer-->
+    <div class="col-1 auto">
+        <p class="copyright">© Yeshtml5, Inc. All rights reserved.</p>
+        <ul class="nav">
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">프로젝트의뢰</a></li>
+        </ul>
+        <select>
+            <option>포트폴리오</option>
+            <option>회사소개</option>
+        </select>
+        <p class="address">
+            (우) 13493 경기도 안양시 동안구 비산동 임곡로80번길 <br>
+            대표전화 : 031-722-8000 Fax : 031-722-8901 구매문의 : 1588-3096 개인고객 기술지원 : 1577-9880 기업고객 기술지원 : 1577-9431
+        </p>
+    </div>
+</footer><!--//footer-->
+</body>
+</html>

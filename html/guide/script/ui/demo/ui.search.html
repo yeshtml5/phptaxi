@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" rel="stylesheet" href="/src/css/common/basic.css">
+    <link type="text/css" rel="stylesheet" href="/src/css/common/common.css">
+    <link type="text/css" rel="stylesheet" href="/src/css/common/layout.css">
+    <script type="text/javascript" src="/src/js/lib/jquery/jquery.js"></script><!-- jQuery -->
+    <script type="text/javascript" src="/src/js/framework/core/core.js"></script>
+    <script type="text/javascript" src="/src/js/framework/ui/ui.search.js"></script>
+    <!--[if lt IE 9]><script type="text/javascript" src="/src/js/lib/html5/html5.js"></script><![endif]-->
+    <script type="text/javascript">
+        (function ($) {
+            var _func = function () {
+                window.searchCnt = new ui.Search({
+                    target: $('#contents'),
+                    button: $('#searchButton'),
+                    input: $('#searchInput'),
+                    item: $('#items li a').not('.title'),
+                    developer: "FRONT_END"
+                });
+                // 커스텀이벤트 받음
+                $('#contents').bind('search-item', function (event, data) {
+                    console.log("키워드: "+data.keyword);
+                    console.log("결과: "+data.count);
+                });
+            };
+            $(document).ready(_func);
+        })(jQuery);
+    </script>
+</head>
+<body>
+<style type="text/css" rel="stylesheet">
+    /* COMMON STYLE  Start **************************************/
+    button { padding:5px; background: #FF5722; color:#FFF; box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);  }
+    input { padding:5px; border:1px solid #08385d; }
+    /* COMMON STYLE End **************************************/
+    #search { text-align: right;}
+    #items ul { width:150px; margin:0 30px; display:inline-block; vertical-align: top;}
+    #items ul li {  border-bottom:1px solid #005887;}
+    #items ul li button { margin:20px 0;}
+    #items ul li a { display:block; padding:10px; }
+    #items ul li a .on {  color:#FFF; background: #08385d;  font-weight: bold; }
+    #items ul li a:hover { color: #991700; }
+</style>
+<body>
+<div id="contents" class="tmpl">
+    <div class="cnt">
+        <div id="search">
+            <label for="searchInput">검색어:</label>
+            <input id="searchInput" type="text">
+            <button id="searchButton">검색하기</button>
+        </div>
+        <div id="items">
+            <ul>
+                <li><button class="btn1"><span>기아자동차</span></button></li>
+                <li><a href="#"><span>모닝</span></a></li>
+                <li><a href="#"><span>레이</span></a></li>
+                <li><a href="#"><span>프라이드</span></a></li>
+                <li><a href="#"><span>K3</span></a></li>
+                <li><a href="#"><span>K5</span></a></li>
+                <li><a href="#"><span>K7</span></a></li>
+                <li><a href="#"><span>K9</span></a></li>
+                <li><a href="#"><span>쏘울</span></a></li>
+                <li><a href="#"><span>스포티지</span></a></li>
+                <li><a href="#"><span>스포티지 신형</span></a></li>
+                <li><a href="#"><span>쏘렌토</span></a></li>
+                <li><a href="#"><span>카렌스</span></a></li>
+                <li><a href="#"><span>카니발</span></a></li>
+            </ul>
+            <ul>
+                <li><button class="btn1"><span>쉐보래</span></button></li>
+                <li><a href="#"><span>스파크</span></a></li>
+                <li><a href="#"><span>올란도</span></a></li>
+                <li><a href="#"><span>TRAX</span></a></li>
+                <li><a href="#"><span>캡티바</span></a></li>
+                <li><a href="#"><span>말리부</span></a></li>
+            </ul>
+            <ul>
+                <li><button class="btn1"><span>르노삼성</span></button></li>
+                <li><a href="#"><span>QM3</span></a></li>
+                <li><a href="#"><span>SM3</span></a></li>
+                <li><a href="#"><span>QM5</span></a></li>
+                <li><a href="#"><span>SM5</span></a></li>
+                <li><a href="#"><span>SM7</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
